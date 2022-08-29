@@ -1,0 +1,69 @@
+[
+    {
+        "id": "99c82ef3084a307d",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f3be75a9da6c490e",
+        "type": "naver-stock-node",
+        "z": "99c82ef3084a307d",
+        "name": "",
+        "x": 490,
+        "y": 240,
+        "wires": [
+            [
+                "5f084630aadceba0"
+            ]
+        ]
+    },
+    {
+        "id": "b9e50cc3618f65c7",
+        "type": "inject",
+        "z": "99c82ef3084a307d",
+        "name": "삼성전자",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "005930",
+        "payloadType": "str",
+        "x": 200,
+        "y": 240,
+        "wires": [
+            [
+                "f3be75a9da6c490e"
+            ]
+        ]
+    },
+    {
+        "id": "5f084630aadceba0",
+        "type": "debug",
+        "z": "99c82ef3084a307d",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 240,
+        "wires": []
+    }
+]
